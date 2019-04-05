@@ -1,0 +1,14 @@
+version: '2'
+services:
+    web:
+        environment:
+            - FLASK_APP=server.py
+        build: .
+        ports:
+            - "5000:5000"
+        volumes:
+            - .:/app
+        depends_on:
+            - redis
+    redis:
+        image: redis
