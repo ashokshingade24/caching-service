@@ -4,8 +4,8 @@ steps:
 - name: docker  
   image: plugins/docker
   settings:
-    username: ashokshingade24
-    password: Test#7892
+    username: ${DOCKER_USER}
+    password: ${DOCKER_PASS}
     repo: ashokshingade24/caching
     tags:
       - latest
