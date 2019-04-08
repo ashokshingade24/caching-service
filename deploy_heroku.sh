@@ -1,5 +1,5 @@
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 heroku plugins:install @heroku-cli/plugin-container-registry
-docker login --username _ --password=$HEROKU_API_KEY registry.heroku.com
-heroku container:push web --app $HEROKU_APP_NAME
-heroku container:release web --app $HEROKU_APP_NAME
+docker login --username _ --password=634f900f-2179-4853-bd59-74e3e6a772b0 registry.heroku.com
+heroku container:push web --app pure-fjord-93329
+heroku container:release web --app pure-fjord-93329
