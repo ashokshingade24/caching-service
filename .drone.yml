@@ -6,7 +6,7 @@ steps:
   settings:
     username: ashokshingade24
     password: Test#7892
-    repo: caching
+    repo: ashokshingade24/caching
     tags:
       - latest
       - '1.0.1'
