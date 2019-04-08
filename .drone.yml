@@ -1,0 +1,13 @@
+kind: pipeline
+name: default
+steps:
+- name: docker  
+  image: plugins/docker
+  settings:
+    username: ashokshingade24
+    password: Test#7892
+    repo: caching
+    tags:
+      - latest
+      - '1.0.1'
+      - '1.0'
