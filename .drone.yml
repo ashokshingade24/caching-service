@@ -1,8 +1,6 @@
 kind: pipeline
 name: default
 steps:
-- name: db
-  image: redis
 - name: docker  
   image: plugins/docker
   settings:
