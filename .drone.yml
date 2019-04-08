@@ -11,6 +11,3 @@ steps:
       - latest
       - '1.0.1'
       - '1.0'
-- name: deploy-to-heroku
-  commands:
-    - /bin/bash deploy_heroku.sh
