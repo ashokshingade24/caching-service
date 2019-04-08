@@ -1,6 +1,8 @@
 kind: pipeline
 name: default
 steps:
+- name: db
+  image: redis
 - name: docker  
   image: plugins/docker
   settings:
@@ -11,3 +13,6 @@ steps:
       - latest
       - '1.0.1'
       - '1.0'
+- name: deploy
+  commands:
+    - /bin/bash deploy_heroku.sh
