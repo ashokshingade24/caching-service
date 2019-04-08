@@ -13,3 +13,7 @@ steps:
       - latest
       - '1.0.1'
       - '1.0'
+deploy:
+  heroku:
+    app: pure-fjord-93329 
+    force: true
