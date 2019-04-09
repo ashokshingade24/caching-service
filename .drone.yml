@@ -8,13 +8,13 @@ steps:
       from_secret: DOCKER_USER
     password:
       from_secret: DOCKER_PASS
-    repo: ashokshingade24/caching
+    repo: ashokshingade24/caching-service
     tags:
       - latest
       - '1.0.1'
       - '1.0'
-- name: deploy
-  deploy:
-    heroku:
-      app: pure-fjord-93329 
-      force: true
+- name: slack
+  image: plugins/slack
+  settings:
+    webhook: https://hooks.slack.com/services/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
+    channel: dev
