@@ -5,7 +5,7 @@
 
 1. Clone the repo
 
-`git clone `
+`git clone https://github.com/ashokshingade24/caching-service.git`
 
 1. Create a Docker image using Dockerfile
 
