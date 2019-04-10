@@ -11,8 +11,8 @@
 
 ` docker image build -t caching-service . `
 
-2. Run Application using docker-compose
+2. Run Application on Kubernetes
 
-` docker-compose up -d `
+` kubectl create -f k8s/ `
 
 3. Commit changes to trigger a drone ci pipeline to build the latest docker image.
